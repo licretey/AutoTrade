@@ -66,22 +66,24 @@ vnpy-wind==1.0.1
 vnpy-xtp==2.2.32.2.0
 ```
 
-> + 启动Bug1
+> ##### 启动Bug1
 > 
-> # 手动修改文件下的配置如下
+> 手动修改文件下的配置如下
 > 
-> # x.to_pydatetime() for x in cn_calendar.precomputed_holidays()
+> `x.to_pydatetime() for x in cn_calendar.precomputed_holidays()`
 > 
-> + 启动Bug2：numpy版本不兼容
+> ##### 启动Bug2：numpy版本不兼容
+>
+> ##### 启动Bug3：tab-lib版本不兼容
 > 
-> # ImportError: cannot import name 'ZoneInfo' from 'vnpy.trader.utility'
+> `ImportError: cannot import name 'ZoneInfo' from 'vnpy.trader.utility'`
 > 
-> # 最新版本要和vnpy的dev分支代码一起使用，所以降级 vnpy_tts 为6.5.1.3即可
+> 最新版本要和vnpy的dev分支代码一起使用，所以降级 vnpy_tts 为6.5.1.3即可
 > 
-> pip uninstall vnpy_tts
-> pip install vnpy_tts==6.5.1.3
+> `pip uninstall vnpy_tts`
+> `pip install vnpy_tts==6.5.1.3`
 > 
-> + 启动Bug4：tab-lib
+> ##### 启动Bug4：tab-lib
 > 
 > 到[网站Archived: Python Extension Packages for Windows](https://www.lfd.uci.edu/~gohlke/pythonlibs/#ta-lib)下载对应的wsl文件，然后`pip install xxx.wsl`
 
@@ -90,7 +92,7 @@ vnpy-xtp==2.2.32.2.0
 + win下vnpy启动后会在用户目录下创建隐藏目录，包含各种日志、配置等信息
 + 如目录`C:\Users\xxxPC\.vntrader`，内容如下
 
-![](.\images\2022-08-07-13-58-54-image.png)
+![](./images/2022-08-07-13-58-54-image.png)
 
 ## 数据库配置文件
 
